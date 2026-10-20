@@ -14,6 +14,7 @@ import edu.ifmt.cobrancaifmt2.model.Titulo.StatusTitulo;
 
 
 
+
 @Controller
 class TituloController {
 
@@ -50,5 +51,11 @@ class TituloController {
     @ModelAttribute ("todosStatusTitulo")
     public List<StatusTitulo> todosStatusTitulo() {
         return Arrays.asList(StatusTitulo.values());
-    }   
+    }
+    
+    @RequestMapping(value = "/titulos", method = RequestMethod.GET)
+    public String pesquisar(){
+        return "PesquisaTitulos";
+    }
 }
+
