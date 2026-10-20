@@ -1,8 +1,29 @@
-HELP.md
+### Maven e arquivos gerados ###
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+HELP.md
+
+### Configuracoes locais e variaveis de ambiente ###
+.env
+.env.*
+!.env.example
+
+### Logs e diagnosticos da JVM ###
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+*.hprof
+
+### JDK local (nao faz parte do codigo do projeto) ###
+/src/main/resources/oracleJdk-27/
+
+### Arquivos temporarios do sistema operacional ###
+.DS_Store
+Thumbs.db
+Desktop.ini
 
 ### STS ###
 .apt_generated

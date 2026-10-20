@@ -39,12 +39,17 @@ public class Titulo {
     // Opcoes permitidas para o status de um titulo.
     public enum StatusTitulo {
         PENDENTE("Pendente"), 
-        RECEBIDO("Recebido");
-
+        RECEBIDO("Recebido"),
+        CANCELADO("Cancelado");
+        
         private String descricao;
 
         StatusTitulo(String descricao) {
             this.descricao = descricao;
+        }
+
+        public String getDescricao() {
+            return descricao;
         }
     }
     public Long getCodigo() {
